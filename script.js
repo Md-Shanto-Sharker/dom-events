@@ -14,6 +14,20 @@ btnMakeBlue.onclick = function makeBlue(){
 }
 
 
-
+// defferent way we are not use this..........
 const btnMakePurple =document.getElementById('btn-make-purple');
-console.log(btnMakePurple);
+function makePurple(){
+    document.body.style.backgroundColor='purple'
+}
+btnMakePurple.onclick=makePurple;
+
+const changeBtn = document.getElementById('change');
+function makeChange(){
+    changeBtn.style.backgroundColor = 'gray'
+    changeBtn.style.padding = '20px'
+    changeBtn.style.border = 'none'
+    changeBtn.style.borderRadius = '50px';
+}
+
+
+
